@@ -267,41 +267,62 @@ body {
   gap: 2rem;
 }
 
-.card {
-  min-width: 210px;
-  height: 254px;
-  border-radius: 4px;
-  background: #e9b7b7;
-  display: flex;
-  gap: 5px;
-  padding: 0.4em;
+h5 {
+  margin: 1rem 0 1rem;
+  font-size: 1.4em;
+  font-weight: 700;
 }
-.card a {
-  height: 100%;
-  flex: 1;
+
+p {
+  font-size: 12px;
+}
+
+.property-card {
+  height: 18em;
+  width: 14em;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 16px;
   overflow: hidden;
-  cursor: pointer;
-  border-radius: 2px;
-  transition: all 0.5s;
-  background: rgba(116, 75, 202, 0.4);
-  border: 1px solid rgb(116, 75, 202);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
 }
-.card a:hover {
-  flex: 4;
+.property-card:hover .property-description {
+  height: 0em;
+  padding: 0px 1em;
 }
-.card a span {
-  padding: 0.5em;
+.property-card:hover .property-image {
+  height: 18em;
+}
+
+.property-image {
+  height: 6em;
+  width: 14em;
+  padding: 1em 2em;
+  position: Absolute;
+  top: 0px;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url("../132.JPG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.property-description {
+  background-color: #FAFAFC;
+  height: 12em;
+  width: 14em;
+  position: absolute;
+  bottom: 0em;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
   text-align: center;
-  transform: rotate(-90deg);
-  transition: all 0.5s;
-  text-transform: uppercase;
-  color: #212121;
-  letter-spacing: 0.1em;
 }
-.card a:hover span {
-  transform: rotate(0);
-}/*# sourceMappingURL=main.css.map */
+
+.property-random_quotes {
+  background-image: url("../img/random_quotes.jpg");
+}
+
+.property-color_random {
+  background-image: url("https://i.ibb.co/GPKkjKM/image.jpg");
+}/*# sourceMappingURL=mainOld.css.map */
