@@ -29,3 +29,10 @@ const changeSlide = (diraction) => {
 
 upBtn.addEventListener('click', () => changeSlide('up'))
 downBtn.addEventListener('click', () => changeSlide('down'))
+window.addEventListener('keydown', (evt) => {
+  if (evt.key === 'ArrowUp') {
+    changeSlide('up')
+  } else if (evt.key === 'ArrowDown') {
+    changeSlide('down')
+  }
+})
